@@ -12,9 +12,15 @@
 <body>
 {% include header.html %}
 	<main class="content">
+		<section class="intro">
+			<div class="container">
+				<h2>About</h2>
+				<p>We like making music in the form of short form <a class="show-link" href="{{ site.baseurl }}/index.html">albums<a/>.</p>
+			</div>
+		</section>
 		<section class="projects">
 			<div class="container">
-				<h1>Artists</h1>
+				<h2>Artists</h2>
 				<br/>
 				<ul class="projects-list">
 					{% for artist in site.artists %}

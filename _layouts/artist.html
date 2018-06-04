@@ -19,7 +19,7 @@
 					<h1>
 						<a class="show-link" href="{{ page.bandcamp }}" target="_blank" title="{{ page.name }}" rel="nofollow">{{ page.name }}</a>
 					</h1>
-					<span class="h2">Description</span>
+					<span class="h2">About</span>
 					{{ page.content }}
 
 					<span class="h2">Discography</span>
@@ -54,16 +54,21 @@
 		</section>
 		<section class="project-navigation">
 			<div class="container">
-				{% if page.previous and page.previous.categories contains "projects" %}
+				{% if page.previous %}
 				<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">
 					<span class="h2">Previous</span>
-					<h2>{{ page.previous.project.title }}</h2>
+					<h2>{{ page.previous.name }}</h2>
+				</a>
+				{% else %}
+				<a>
+					<span></span>
+					<h2></h2>
 				</a>
 				{% endif %}
-				{% if page.next and page.next.categories contains "projects" %}
+				{% if page.next %}
 				<a title="Next {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="next">
 					<span class="h2">Next</span>
-					<h2>{{ page.next.project.title }}</h2>
+					<h2>{{ page.next.name }}</h2>
 				</a>
 				{% endif %}
 			</div>
