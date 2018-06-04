@@ -14,31 +14,63 @@
 	<main class="content">
 		<section class="project">
 			<div class="container">
-				<h2>About</h2>
-				<p>{{ page.content }}</p>
+				<article>
+					<span class="h2">Artist</span>
+					<h1>
+						<a href="{{ page.project.url }}" target="_blank" title="{{ page.project.name }}" rel="nofollow">{{ page.artist.name }}</a>
+					</h1>
+					<span class="h2">Description</span>
+					{{ page.content }}
+
+					<span class="h2">Discography</span>
+
+					<div class="projects">
+						<div class="container no-pad">
+							<ul class="project-list-mini">
+								{% for item in site.categories.releases reversed %}
+									<li>
+										<a href="{{ item.url | prepend: site.baseurl }}">
+											<div class="img-wrapper">
+												<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.name }}" />
+											</div>
+											<span class="h2">{{ item.project.type }}</span>
+											<h3>{{ item.project.name }}</h3>
+										</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</article>
+				<aside>
+
+							<img src="{{ page.image.url | prepend: site.baseurl }}" alt="{{ page.image.alt }}" />
+
+					
+				</aside>
 			</div>
 		</section>
-		<section class="projects">
+		<section class="project-navigation">
 			<div class="container">
-				<h2>Discography</h2>
-				<ul class="projects-list">
-					{% for item in site.categories.releases reversed %}
-						<li>
-							<a href="{{ item.url | prepend: site.baseurl }}">
-								<div class="img-wrapper">
-									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
-								</div>
-								<span class="h2">{{ item.project.type }}</span>
-								<h3>{{ item.project.name }}</h3>
-							</a>
-						</li>
-					{% endfor %}
-				</ul>
+				{% if page.previous and page.previous.categories contains "projects" %}
+				<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">
+					<span class="h2">Previous</span>
+					<h2>{{ page.previous.project.title }}</h2>
+				</a>
+				{% endif %}
+				{% if page.next and page.next.categories contains "projects" %}
+				<a title="Next {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="next">
+					<span class="h2">Next</span>
+					<h2>{{ page.next.project.title }}</h2>
+				</a>
+				{% endif %}
 			</div>
 		</section>
 	</main>
 	{% include footer.html %}
+	<script src="{{ "/assets/scripts/vendor/jquery-1.12.4.min.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/scripts/vendor/sticky-kit.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/scripts/project.js" | prepend: site.baseurl }}"></script>
 </body>
 </html>

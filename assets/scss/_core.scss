@@ -51,6 +51,25 @@ p {
 a {
 	color: $color-black;
 	text-decoration: none;
+
+	&.show-link
+	{
+		position: relative;
+  text-decoration: none;
+  color: inherit;
+  
+  background-image: linear-gradient(to bottom, $bgcolor 50%, $underlineColor 50%);
+  background-size: 1px $underlineHeight;
+  background-repeat: repeat-x;
+  background-position: 0% 85%;
+  
+  .no-cssgradients & {
+    text-decoration: underline;
+    color: blue;
+    text-shadow: none;
+  }
+
+	}
 }
 
 ul {

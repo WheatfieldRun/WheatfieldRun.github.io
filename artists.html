@@ -10,26 +10,21 @@
 	{% include head.html %}
 </head>
 <body>
-	{% include header.html %}
+{% include header.html %}
 	<main class="content">
-		<section class="intro">
-			<div class="container">
-				<h2>About</h2>
-				<p>A netlabel created and maintained by a loose collective of prairie-raised <a class="show-link" href="/artists.html">musicians<a/>.</p>
-			</div>
-		</section>
 		<section class="projects">
 			<div class="container">
-				<h2>All Releases</h2>
+				<h1>Artists</h1>
+				<br/>
 				<ul class="projects-list">
-					{% for item in site.categories.releases reversed %}
+					{% for item in site.categories.artist reversed %}
 						<li>
 							<a href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
-									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+									<img src="{{ item.image.url }}" alt="{{ item.image.alt }}" />
 								</div>
-								<span class="h2">{{ item.project.type }}</span>
-								<h3>{{ item.project.name }}</h3>
+								<span class="h2">{{ item.artist.type }}</span>
+								<h3>{{ item.artist.name }}</h3>
 							</a>
 						</li>
 					{% endfor %}
