@@ -1,6 +1,6 @@
 .container {
 	display: block;
-	margin: 0 auto;
+	margin: 0;
 	max-width: 70em;
 	padding: 0 3rem;
 	@include clearfix;
@@ -115,9 +115,46 @@
 			font-weight: 800;
 			position: absolute;
 			top: 50%;
-			left: 50%;
-			margin-top: -.5rem;
-			margin-left: -4.4rem;
+			width:100%;
+			text-align: center;
+			margin: auto;
+			opacity: 0;
+			-webkit-transition: all .5s ease-in-out;
+    		transition: all .5s ease-in-out;
+    		-webkit-transition-delay: .25s;
+    		transition-delay: .25s;
+    		z-index: 2;
+		}
+
+		&:after {
+			background: #000;
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			opacity: 0;
+			-webkit-transition: all .5s ease-in-out;
+    		transition: all .5s ease-in-out;
+    		z-index: 1;
+		}
+	}
+
+	.img-wrapper-artist {
+		position: relative;
+
+		&:before {
+			content: "View Artist";
+			color: $color-white;
+			@extend .h2;
+			font-weight: 800;
+			position: absolute;
+			top: 50%;
+			width:100%;
+			text-align: center;
+			margin: auto;
 			opacity: 0;
 			-webkit-transition: all .5s ease-in-out;
     		transition: all .5s ease-in-out;
@@ -169,12 +206,13 @@
 
 	@media (min-width: $breakpoint-medium) {
 		li {
-			width: 50%;
+			width: 45%;
 		}
 	}
 
 	li {
 		margin-bottom: 3rem;
+		margin-right: 1rem;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -206,9 +244,9 @@
 			font-weight: 800;
 			position: absolute;
 			top: 50%;
-			left: 50%;
-			//margin-top: -.5rem;
-			//margin-left: -4.4rem;
+			width:100%;
+			text-align: center;
+			margin: auto;
 			opacity: 0;
 			-webkit-transition: all .5s ease-in-out;
     		transition: all .5s ease-in-out;
@@ -238,7 +276,7 @@
 	}
 
 	span {
-		//margin: 1rem 0 .5rem;
+		margin: 1rem 0 .5rem;
 	}
 }
 

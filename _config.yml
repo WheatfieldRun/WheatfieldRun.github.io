@@ -1,7 +1,7 @@
 # User config
 author: "Wheatfield Run"
-tagline: "A netlabel and a collection of albums maintained by prairie-raised people."
-description: "A netlabel and a collection of albums maintained by prairie-raised people."
+tagline: "A Prairie-born Netlabel"
+description: "A netlabel and a collection of albums maintained by prairie-born people."
 keywords: "Wheatfield Run, music, netlabel"
 email: "hi@wheatfield.run"
 # linkedin: "https://www.linkedin.com/"
@@ -14,3 +14,10 @@ highlighter: rouge
 sass:
   sass_dir: assets/scss
   style: compressed
+
+collections_dir: content
+collections:
+  artists:
+    output: true
+  releases:
+    output: true

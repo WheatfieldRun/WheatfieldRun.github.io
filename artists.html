@@ -17,14 +17,14 @@
 				<h1>Artists</h1>
 				<br/>
 				<ul class="projects-list">
-					{% for item in site.categories.artist reversed %}
+					{% for artist in site.artists %}
 						<li>
-							<a href="{{ item.url | prepend: site.baseurl }}">
-								<div class="img-wrapper">
-									<img src="{{ item.image.url }}" alt="{{ item.image.alt }}" />
+							<a href="/artists/{{ artist.slug | prepend: site.baseurl }}">
+								<div class="img-wrapper-artist">
+									<img src="{{ artist.image.url }}" alt="{{ artist.image.alt }}" />
 								</div>
-								<span class="h2">{{ item.artist.type }}</span>
-								<h3>{{ item.artist.name }}</h3>
+								<span class="h2">{{ artist.genre }}</span>
+								<h3>{{ artist.name }}</h3>
 							</a>
 						</li>
 					{% endfor %}

@@ -1,19 +1,12 @@
 ---
 layout: artist
 permalink: /artists/:title/
-category: artist
 
-meta:
-  keywords: "Hero Is Not Strong"
-
-artist:
-  name: "Hero Is Not Strong"
-  url: "https://heroisnotstrong.bandcamp.com"
-  catagory: heroisnotstrong
-  type: Electronic, Experimental
-
-featuredEmbed: pagehere
-
+name: Hero Is Not Strong
+realName: Marlon Wiebe
+genre: Electronic, Pop
+bandcamp: "https://heroisnotstrong.bandcamp.com"
+slug: hero-is-not-strong
 image:
   url: "https://f4.bcbits.com/img/0013265207_20.jpg"
   alt: "Hero Is Not Strong Picture"
