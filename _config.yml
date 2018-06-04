@@ -1,0 +1,16 @@
+# User config
+author: "Wheatfield Run"
+tagline: "A netlabel and a collection of albums maintained by prairie-raised people."
+description: "A netlabel and a collection of albums maintained by prairie-raised people."
+keywords: "Wheatfield Run, music, netlabel"
+email: "hi@wheatfield.run"
+# linkedin: "https://www.linkedin.com/"
+# twitter: "https://twitter.com/"
+# github: "https://github.com/"
+
+# Site config
+baseurl: ""
+highlighter: rouge
+sass:
+  sass_dir: assets/scss
+  style: compressed
