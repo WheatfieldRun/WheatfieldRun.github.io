@@ -5,8 +5,8 @@ html {
 body {
 	background: $color-white;
 	color: $color-black;
-	font-family: $font-poppins;
-	font-size: 1.8em;
+	font-family: $font-blocktext;
+	font-size: 1.8rem + $font-blocktext-sizing;
 	line-height: 1.6;
 	font-weight: 600;
 	-webkit-font-smoothing: antialiased;
@@ -15,7 +15,7 @@ body {
 h1,
 .h1 {
 	color: $color-black;
-	font-size: 2.7rem;
+	font-size: 2.7rem + $font-blocktext-sizing;
 	font-weight: 600;
 	line-height: 1;
 	margin: 0;
@@ -25,8 +25,8 @@ h2,
 .h2 {	
 	color: $color-silver-chalice;
 	display: block;
-	font-family: $font-lekton;
-    font-size: 1rem;
+	font-family: $font-header;
+    font-size: 1rem + $font-header-sizing;
     font-weight: 400;
     letter-spacing: .2rem;
     line-height: 1;
@@ -37,8 +37,8 @@ h2,
 h3,
 .h3 {
 	color: $color-black;
-	font-family: $font-poppins;
-    font-size: 1.8rem;
+	font-family: $font-blocktext;
+    font-size: 1.8rem + $font-blocktext-sizing;
     font-weight: 600;
     line-height: 1;
     margin: 0;
@@ -104,8 +104,8 @@ code {
 	background: $color-white;
 	border: 1px solid $color-silver-chalice;
 	border-radius: 3px;
-	font-family: $font-lekton;
-	font-size: 1.5rem;	
+	font-family: $font-header;
+	font-size: 1.5rem + $font-header-sizing;	
 	padding: .1rem .4rem;
 
 	var {
@@ -118,7 +118,7 @@ dl {
 
 	dt,
 	dd {
-		font-family: $font-lekton;		
+		font-family: $font-header;		
 	}
 
 	dt {
@@ -163,7 +163,7 @@ table {
 
 	th,
 	td {
-		font-family: $font-lekton;
+		font-family: $font-header;
 		font-weight: 400;
 		text-align: left;
 		padding: .5rem 1rem;
