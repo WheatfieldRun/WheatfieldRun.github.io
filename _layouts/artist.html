@@ -19,7 +19,9 @@
 					<h1>
 						<a class="show-link" href="{{ page.bandcamp }}" target="_blank" title="{{ page.name }}" rel="nofollow">{{ page.name }}</a>
 					</h1>
-					<span class="h2">About</span>
+					
+					<br/>
+
 					{{ page.content }}
 
 					<span class="h2">Discography</span>
@@ -28,7 +30,7 @@
 						<div class="container no-pad">
 							<ul class="project-list-mini">
 								{% for item in site.releases reversed %}
-									{% if item.artistSlug == page.artist.slug %}
+									{% if item.artist.slug == page.slug %}
 									<li>
 										<a href="{{ item.url | prepend: site.baseurl }}">
 											<div class="img-wrapper">
@@ -43,12 +45,15 @@
 							</ul>
 						</div>
 					</div>
+					
+					<span class="h2">Members</span>
+					<p>{{ page.members }}</p>
+					<span class="h2">Genres</span>
+					<p>{{ page.genre }}</p>
+					
 				</article>
 				<aside>
-
-							<img src="{{ page.image.url | prepend: site.baseurl }}" alt="{{ page.image.alt }}" />
-
-					
+					<img src="{{ page.image.url | prepend: site.baseurl }}" alt="{{ page.image.alt }}" />
 				</aside>
 			</div>
 		</section>
