@@ -19,3 +19,9 @@ images:
 ---
 <p>A mixtape of synthy tunes made in the last year. Inspired by and using samples from the amazing Prelinger Archives.</p>
 
+{% include bandcamp-embed.html 
+  embed=page.embed
+  name=page.name
+  artist=page.artist.name
+  url=page.url
+%}

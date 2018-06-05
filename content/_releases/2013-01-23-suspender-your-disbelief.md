@@ -17,4 +17,14 @@ images:
     alt: Suspender Your Disbelief album art
 
 ---
-<p></p>
+
+## Description
+
+<p>The third and most ambitious of the Secondhandpants albums.  Francis and Wyll are accompanied by a host of characters, as well as a string quartet, children screaming, and much more.</p>
+
+{% include bandcamp-embed.html 
+  embed=page.embed
+  name=page.name
+  artist=page.artist.name
+  url=page.url
+%}
