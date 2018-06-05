@@ -3,7 +3,7 @@ layout: artist
 permalink: /artists/:title/
 
 name: Hero Is Not Strong
-realName: Marlon Wiebe
+members: Marlon Wiebe
 genre: Electronic, Pop
 bandcamp: "https://heroisnotstrong.bandcamp.com"
 slug: hero-is-not-strong
@@ -12,4 +12,7 @@ image:
   alt: "Hero Is Not Strong Picture"
 
 ---
+
+## BIO
+
 <p>Hero is Not Strong is the musical pseudonym of Marlon Wiebe, taken from a poor translation of a video game. Raised in small town Saskatchewan on NES games, ukuleles, and figuring out how to make weird QBASIC things on his 286.</p>
