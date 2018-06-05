@@ -20,7 +20,7 @@
 					</h1>
 					
 					<span class="h2">Artist</span>
-					<p><a class="show-link" title="{{ page.artist }}" href="{{ site.baseurl }}/artists/{{ page.artist | replace: ' ', '-' }}">{{ page.artist }}</a></p>
+					<p><a class="show-link" title="{{ page.artist }}" href="{{ site.baseurl }}/artists/{{ page.artist | replace: ' ', '-' | downcase }}">{{ page.artist }}</a></p>
 
 					<span class="h2">Genre</span>
 					<p>{{ page.genre }}</p>
