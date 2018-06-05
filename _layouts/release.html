@@ -13,30 +13,23 @@
 		<section class="project">
 			<div class="container">
 				<article>
+
 					<span class="h2">Album</span>
 					<h1>
 						<a class="show-link" href="{{ page.project.url }}" target="_blank" title="{{ page.project.name }}" rel="nofollow">{{ page.project.name }}</a>
 					</h1>
 					
+					<span class="h2">Artist</span>
+					<p><a class="show-link" title="{{ page.artist.name }}" href="{{ site.baseurl }}/artists/{{ page.artist.slug }}">{{ page.artist.name }}</a></p>
+
 					<span class="h2">Genre</span>
 					<p>{{ page.project.genre }}</p>
-					<span class="h2">Description</span>
 
 					{{ page.content }}
-
-					<span class="h2">Listen</span>
-					<div class="release-listen">
-						<iframe style="border: 0; width: 100%; height: 439px;" src="https://bandcamp.com/EmbeddedPlayer/album={{ page.project.embed }}/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/" seamless><a href="{{ page.project.url }}">{{ page.project.name }} by {{ page.artist.name }}</a></iframe>
-					</div>
-
-					<div class="project-meta">
-						<span class="h2">Technologies</span>
-						<p>{{ page.project.tech }}</p>
-						<span class="h2">Artist</span>
-						<p><a class="show-link" title="{{ page.artist.name }}" href="{{ site.baseurl }}/artists/{{ page.artist.slug }}">{{ page.artist.name }}</a></p>
-						<span class="h2">Release Date</span>
-						<p>{{ page.project.releaseDate }}</p>
-					</div>
+						
+					<span class="h2">Release Date</span>
+					<p>{{ page.project.releaseDate }}</p>
+					
 				</article>
 				<aside>
 					<ul>
