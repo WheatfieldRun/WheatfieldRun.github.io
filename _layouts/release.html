@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>{{ site.author }} / {{ page.project.title }}</title>
+	<title>{{ site.author }} / {{ page.name }}</title>
 	<meta name="author" content="{{ site.author }}">
 	<meta name="description" content="{{ page.content | strip_html | strip_newlines }}">
 	<meta name="keywords" content="{{ page.meta.keywords }}">
@@ -16,19 +16,19 @@
 
 					<span class="h2">Album</span>
 					<h1>
-						<a class="show-link" href="{{ page.project.url }}" target="_blank" title="{{ page.project.name }}" rel="nofollow">{{ page.project.name }}</a>
+						<a class="show-link" href="{{ page.url }}" target="_blank" title="{{ page.name }}" rel="nofollow">{{ page.name }}</a>
 					</h1>
 					
 					<span class="h2">Artist</span>
-					<p><a class="show-link" title="{{ page.artist.name }}" href="{{ site.baseurl }}/artists/{{ page.artist.slug }}">{{ page.artist.name }}</a></p>
+					<p><a class="show-link" title="{{ page.artist }}" href="{{ site.baseurl }}/artists/{{ page.artist | replace: ' ', '-' }}">{{ page.artist }}</a></p>
 
 					<span class="h2">Genre</span>
-					<p>{{ page.project.genre }}</p>
+					<p>{{ page.genre }}</p>
 
 					{{ page.content }}
 						
 					<span class="h2">Release Date</span>
-					<p>{{ page.project.releaseDate }}</p>
+					<p>{{ page.releaseDate }}</p>
 					
 				</article>
 				<aside>
@@ -45,9 +45,9 @@
 		<section class="project-navigation">
 			<div class="container">
 				{% if page.previous %}
-				<a title="Previous {{ page.previous.project.name }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">
+				<a title="Previous {{ page.previous.name }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">
 					<span class="h2">Previous</span>
-					<h2>{{ page.previous.project.name }}</h2>
+					<h2>{{ page.previous.name }}</h2>
 				</a>
 				{% else %}
 				<a>
@@ -56,9 +56,9 @@
 				</a>
 				{% endif %}
 				{% if page.next %}
-				<a title="Next {{ page.next.project.name }}" href="{{ page.next.url | prepend: site.baseurl }}" class="next">
+				<a title="Next {{ page.next.name }}" href="{{ page.next.url | prepend: site.baseurl }}" class="next">
 					<span class="h2">Next</span>
-					<h2>{{ page.next.project.name }}</h2>
+					<h2>{{ page.next.name }}</h2>
 				</a>
 				{% endif %}
 			</div>

@@ -2,24 +2,20 @@
 layout: release
 permalink: /releases/:title/
 category: ukulele, folk, science-folktion
+keywords: "The Secondhandpants"
 
-meta:
-  keywords: "The Secondhandpants"
-
-project:
-  name: "Suspender Your Disbelief"
-  url: "https://thesecondhandpants.bandcamp.com/album/suspender-your-disbelief"
-  embed: 1459777666
-  logo: "https://f4.bcbits.com/img/a2786638664_10.jpg"
-  genre: "Ukulele, Folk, Science-folktion"
-  releaseDate: "January 23rd, 2013"
+name: "Suspender Your Disbelief"
+url: "https://thesecondhandpants.bandcamp.com/album/suspender-your-disbelief"
+embed: 1459777666
+genre: "Ukulele, Folk, Science-folktion"
+releaseDate: "January 23rd, 2013"
 
 artist:
   name: The Secondhandpants
   slug: secondhandpants
 
 images:
-  - image:
+  - main:
     url: "https://f4.bcbits.com/img/a2786638664_10.jpg"
     alt: "Suspender Your Disbelief album art"
 
