@@ -17,7 +17,10 @@ images:
     alt: REAL TROUBLE album art
 
 ---
-<p>A mixtape of synthy tunes made in the last year. Inspired by and using samples from the amazing Prelinger Archives.</p>
+
+## Description
+
+A mixtape of synthy tunes made in the last year. Inspired by and using samples from the amazing Prelinger Archives.
 
 {% include bandcamp-embed.html 
   embed=page.embed

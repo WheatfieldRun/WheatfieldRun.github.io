@@ -20,7 +20,7 @@ images:
 
 ## Description
 
-<p>The third and most ambitious of the Secondhandpants albums.  Francis and Wyll are accompanied by a host of characters, as well as a string quartet, children screaming, and much more.</p>
+The third and most ambitious of the Secondhandpants albums.  Francis and Wyll are accompanied by a host of characters, as well as a string quartet, children screaming, and much more.
 
 {% include bandcamp-embed.html 
   embed=page.embed
