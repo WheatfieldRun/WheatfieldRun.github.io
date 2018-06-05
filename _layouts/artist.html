@@ -30,11 +30,11 @@
 						<div class="container no-pad">
 							<ul class="project-list-mini">
 								{% for item in site.releases reversed %}
-									{% if item.artist.slug == page.slug %}
+									{% if item.artist == page.name %}
 									<li>
 										<a href="{{ item.url | prepend: site.baseurl }}">
 											<div class="img-wrapper">
-												<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.name }}" />
+												<img src="{{ item.images[0].url | prepend: site.baseurl }}" alt="{{ item.images[0].alt }}" />
 											</div>
 											<span class="h2">{{ item.genre }}</span>
 											<h3>{{ item.name }}</h3>

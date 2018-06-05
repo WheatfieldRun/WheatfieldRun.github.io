@@ -1,6 +1,7 @@
 ---
 layout: artist
 permalink: /artists/:title/
+draft: true
 
 name: Baron Skeleton
 members: Ben Dyck, Marlon Wiebe

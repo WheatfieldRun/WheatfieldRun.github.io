@@ -1,4 +1,6 @@
 ---
+draft: true
+
 layout: release
 permalink: /releases/:name/
 keywords: Hero Is Not Strong
@@ -19,9 +21,9 @@ images:
 
 ## Description
 
-<p>This album was an experiment to try and combine electronic inspired beats with driving guitars and ethereal vocals.</p>
+<p>This is where you describe the release.</p>
 
-<p>"I like how it begins very rock/poppy but then morphs into some all out electronic bliss." - Jeff Friesen</p>
+<p></p>
 
 {% include bandcamp-embed.html 
   embed=page.embed

@@ -1,6 +1,6 @@
 ---
 layout: release
-permalink: /releases/:title/
+permalink: /releases/:name/
 category: electronic, pop
 keywords: Hero Is Not Strong
 
@@ -18,3 +18,4 @@ images:
 
 ---
 <p>A mixtape of synthy tunes made in the last year. Inspired by and using samples from the amazing Prelinger Archives.</p>
+

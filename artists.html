@@ -24,6 +24,7 @@
 				<br/>
 				<ul class="projects-list">
 					{% for artist in site.artists %}
+						{% if artist.draft!=true %}
 						<li>
 							<a href="/artists/{{ artist.slug | prepend: site.baseurl }}">
 								<div class="img-wrapper-artist">
@@ -33,6 +34,7 @@
 								<h3>{{ artist.name }}</h3>
 							</a>
 						</li>
+						{% endif %}
 					{% endfor %}
 				</ul>
 			</div>

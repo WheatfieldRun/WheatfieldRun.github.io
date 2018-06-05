@@ -23,6 +23,7 @@
 				<h2>All Releases</h2>
 				<ul class="projects-list">
 					{% for item in site.releases reversed %}
+						{% if item.draft!=true %}
 						<li>
 							<a href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
@@ -32,6 +33,7 @@
 								<h3>{{ item.name }}</h3>
 							</a>
 						</li>
+						{% endif %}
 					{% endfor %}
 				</ul>
 			</div>
