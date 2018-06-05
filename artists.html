@@ -26,9 +26,9 @@
 					{% for artist in site.artists %}
 						{% if artist.draft!=true %}
 						<li>
-							<a href="/artists/{{ artist.slug | prepend: site.baseurl }}">
+							<a href="{{ site.baseurl }}/artists/{{ artist.slug | replace: ' ', '-' }}">
 								<div class="img-wrapper-artist">
-									<img src="{{ artist.image.url }}" alt="{{ artist.image.alt }}" />
+									<img src="{{ artist.images[0].url }}" alt="{{ artist.images[0].alt }}" />
 								</div>
 								<span class="h2">{{ artist.genre }}</span>
 								<h3>{{ artist.name }}</h3>

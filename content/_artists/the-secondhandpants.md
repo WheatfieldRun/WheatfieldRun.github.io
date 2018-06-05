@@ -6,11 +6,11 @@ name: The Secondhandpants
 members: Curtis Wiebe, Marlon Wiebe
 genre: Folk, Science-Folktion, Ukulele
 bandcamp: "https://thesecondhandpants.bandcamp.com/"
-slug: secondhandpants
 
-image:
-  url: "https://f4.bcbits.com/img/0013553117_20.jpg"
-  alt: "Secondhandpants Portrait"
+images:
+  - main:
+    url: "https://f4.bcbits.com/img/0013553117_20.jpg"
+    alt: "Secondhandpants Portrait"
 
 ---
 
