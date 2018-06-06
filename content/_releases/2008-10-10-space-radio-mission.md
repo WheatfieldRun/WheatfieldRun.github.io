@@ -6,7 +6,7 @@ category: ukulele, folk, science-folktion
 keywords: The Secondhandpants
 
 name: Space Radio Mission
-url: https://thesecondhandpants.bandcamp.com/album/space-radio-mission
+link: https://thesecondhandpants.bandcamp.com/album/space-radio-mission
 embed: 812017114
 genre: Ukulele, Folk, Science-folktion
 releaseDate: October 10th, 2008

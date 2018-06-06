@@ -6,11 +6,10 @@ keywords: Hero Is Not Strong
 
 name: Caverns of Timorous
 artist: Hero Is Not Strong
-url: https://heroisnotstrong.bandcamp.com/album/caverns-of-timorous
+link: https://heroisnotstrong.bandcamp.com/album/caverns-of-timorous
 embed: 699037200
 genre: Electronic, Pop
 releaseDate: May 7th, 2017
-artist: Hero Is Not Strong
 
 images:
   - image:

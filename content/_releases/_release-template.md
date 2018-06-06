@@ -6,7 +6,7 @@ permalink: /releases/:name/
 keywords: Hero Is Not Strong
 
 name: Hero Is Not Strong
-url: https://heroisnotstrong.bandcamp.com/album/hero-is-not-strong
+link: https://heroisnotstrong.bandcamp.com/album/hero-is-not-strong
 embed: 884604598
 genre: Electronic, Rock, Pop
 releaseDate: Feb 1st, 2007

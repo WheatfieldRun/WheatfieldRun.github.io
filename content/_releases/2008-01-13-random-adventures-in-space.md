@@ -5,7 +5,7 @@ category: ukulele, folk, science-folktion
 keywords: The Secondhandpants
 
 name: Random Adventures In Space
-url: https://thesecondhandpants.bandcamp.com/album/random-adventures-in-space
+link: https://thesecondhandpants.bandcamp.com/album/random-adventures-in-space
 embed: 262598875
 genre: Ukulele, Folk, Science-folktion
 releaseDate: January 13, 2008

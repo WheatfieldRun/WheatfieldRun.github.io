@@ -5,7 +5,7 @@ category: electronic, pop
 keywords: Hero Is Not Strong
 
 name: REAL TROUBLE
-url: https://heroisnotstrong.bandcamp.com/album/real-trouble
+link: https://heroisnotstrong.bandcamp.com/album/real-trouble
 embed: 3792809408
 genre: Electronic, Sampling, Pop
 releaseDate: May 1st, 2018

@@ -5,7 +5,7 @@ category: ukulele, folk, science-folktion
 keywords: The Secondhandpants
 
 name: Suspender Your Disbelief
-url: https://thesecondhandpants.bandcamp.com/album/suspender-your-disbelief
+link: https://thesecondhandpants.bandcamp.com/album/suspender-your-disbelief
 embed: 1459777666
 genre: Ukulele, Folk, Science-folktion
 releaseDate: January 23rd, 2013
