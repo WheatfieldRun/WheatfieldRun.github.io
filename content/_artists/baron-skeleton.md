@@ -13,3 +13,7 @@ images:
     alt: Baron Skeleton Picture
 
 ---
+
+## Bio
+
+Forged out of a bear skeleton or possibly a skeleton forged out of a bear, Baron Skeleton arose from the crypt to create only the most ooky of spooky winter cabin basement rock
