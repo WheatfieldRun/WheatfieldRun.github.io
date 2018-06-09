@@ -18,27 +18,10 @@
 				<p>We focus on making small, short form <a class="show-link" href="{{ site.baseurl }}/index.html">albums<a/>.</p>
 			</div>
 		</section>
-		<section class="projects">
-			<div class="container">
-				<h2>Artists</h2>
-				<br/>
-				<ul class="projects-list">
-					{% for artist in site.artists %}
-						{% if artist.draft!=true %}
-						<li>
-							<a href="{{ site.baseurl }}/artists/{{ artist.slug | replace: ' ', '-' }}">
-								<div class="img-wrapper-artist">
-									<img src="{{ artist.images[0].url }}" alt="{{ artist.images[0].alt }}" />
-								</div>
-								<span class="h2">{{ artist.genre }}</span>
-								<h3>{{ artist.name }}</h3>
-							</a>
-						</li>
-						{% endif %}
-					{% endfor %}
-				</ul>
-			</div>
-		</section>
+
+		{% include grid.html items=site.artists filter=false %}
+
+
 	</main>
 	{% include footer.html %}
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>

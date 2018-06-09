@@ -23,4 +23,5 @@ images:
 {% include grid.html 
   items=site.releases
   artist=page.name
+  normalSize=false
 %}

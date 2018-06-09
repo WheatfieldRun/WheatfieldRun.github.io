@@ -58,131 +58,184 @@
 	}
 }
 
-.projects-list {
-	@media (min-width: $breakpoint-small) {
-		margin-left: -1.5rem;
-		margin-right: -1.5rem;
-		@include clearfix;
+.grid
+{
+	ul
+	{
+		@media (min-width: $breakpoint-small) 
+		{
+			margin-left: -1.5rem;
+			margin-right: -1.5rem;
+			@include clearfix;
 
-		li {
-			float: left;
-			width: 50%;
+			li 
+			{
+				float: left;
+				width: 50%;
+			}
+
+			a 
+			{
+				padding: 0 1.5rem;
+			}
 		}
 
-		a {
-			padding: 0 1.5rem;
+		@media (min-width: $breakpoint-medium) 
+		{
+			li 
+			{
+				width: 33.33333%;
+			}
 		}
-	}
 
-	@media (min-width: $breakpoint-medium) {
-		li {
-			width: 33.33333%;
-		}
-	}
+		&.mini 
+		{
+			@media (min-width: $breakpoint-small) 
+			{
+				//margin-left: -1.5rem;
+				margin-right: 1em;
+				@include clearfix;
 
-	li {
-		margin-bottom: 3rem;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
-	a {
-		display: block;
-
-		&:hover {
-			.img-wrapper {
-				&:before {
-					opacity: 1;
+				li 
+				{
+					float: left;
+					width: 100%;
 				}
-				&:after {
-					opacity: .45;
+
+				a 
+				{
+					padding: 1rem 0;
+				}
+			}
+
+			@media (min-width: $breakpoint-medium) 
+			{
+				li 
+				{
+					width: 45%;
 				}
 			}
 		}
-	}
 
-	.img-wrapper {
-		position: relative;
+		li 
+		{
+			margin-bottom: 3rem;
 
-		&:before {
-			content: "View Release";
-			color: $color-white;
-			@extend .h2;
-			font-weight: 800;
-			position: absolute;
-			top: 50%;
-			width:100%;
-			text-align: center;
-			margin: auto;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		-webkit-transition-delay: .25s;
-    		transition-delay: .25s;
-    		z-index: 2;
+			&:last-child 
+			{
+				margin-bottom: 0;
+			}
 		}
 
-		&:after {
-			background: #000;
-			content: "";
+		a 
+		{
 			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		z-index: 1;
-		}
-	}
 
-	.img-wrapper-artist {
-		position: relative;
-
-		&:before {
-			content: "View Artist";
-			color: $color-white;
-			@extend .h2;
-			font-weight: 800;
-			position: absolute;
-			top: 50%;
-			width:100%;
-			text-align: center;
-			margin: auto;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		-webkit-transition-delay: .25s;
-    		transition-delay: .25s;
-    		z-index: 2;
+			&:hover 
+			{
+				.img-wrapper 
+				{
+					&:before 
+					{
+						opacity: 1;
+					}
+					&:after 
+					{
+						opacity: .45;
+					}
+				}
+			}
 		}
 
-		&:after {
-			background: #000;
-			content: "";
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		z-index: 1;
+		.img-wrapper 
+		{
+			position: relative;
+
+			&:before 
+			{
+				content: "View Release";
+				color: $color-white;
+				@extend .h2;
+				font-weight: 800;
+				position: absolute;
+				top: 50%;
+				width:100%;
+				text-align: center;
+				margin: auto;
+				opacity: 0;
+				-webkit-transition: all .5s ease-in-out;
+	    		transition: all .5s ease-in-out;
+	    		-webkit-transition-delay: .25s;
+	    		transition-delay: .25s;
+	    		z-index: 2;
+			}
+
+			&:after 
+			{
+				background: #000;
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				opacity: 0;
+				-webkit-transition: all .5s ease-in-out;
+	    		transition: all .5s ease-in-out;
+	    		z-index: 1;
+			}
 		}
-	}
 
-	img {
-		width: 100%;
-	}
+		.img-wrapper-artist 
+		{
+			position: relative;
 
-	span {
-		margin: 1rem 0 .5rem;
+			&:before 
+			{
+				content: "View Artist";
+				color: $color-white;
+				@extend .h2;
+				font-weight: 800;
+				position: absolute;
+				top: 50%;
+				width:100%;
+				text-align: center;
+				margin: auto;
+				opacity: 0;
+				-webkit-transition: all .5s ease-in-out;
+	    		transition: all .5s ease-in-out;
+	    		-webkit-transition-delay: .25s;
+	    		transition-delay: .25s;
+	    		z-index: 2;
+			}
+
+			&:after 
+			{
+				background: #000;
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				opacity: 0;
+				-webkit-transition: all .5s ease-in-out;
+	    		transition: all .5s ease-in-out;
+	    		z-index: 1;
+			}
+		}
+
+		img 
+		{
+			width: 100%;
+		}
+
+		span 
+		{
+			margin: 1rem 0 .5rem;
+		}
 	}
 }
 
@@ -230,15 +283,6 @@
 		@media (min-width: $breakpoint-medium) {
 			float: left;
 			width: 55%;
-		}
-	}
-
-	.project-meta {
-		margin: 3rem 0 0;
-
-		@media (min-width: $breakpoint-medium) {
-			margin: 5rem 0 0;
-			max-width: 70%;
 		}
 	}
 
@@ -377,97 +421,7 @@
 	}
 }
 
-.project-list-mini {
-	@media (min-width: $breakpoint-small) {
-		//margin-left: -1.5rem;
-		//margin-right: -1.5rem;
-		@include clearfix;
 
-		li {
-			float: left;
-			width: 100%;
-		}
-
-		a {
-			padding: 1rem 0;
-		}
-	}
-
-	@media (min-width: $breakpoint-medium) {
-		li {
-			width: 45%;
-		}
-	}
-
-	li {
-		margin-bottom: 3rem;
-		margin-right: 1rem;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
-	a {
-		display: block;
-
-		&:hover {
-			.img-wrapper {
-				&:before {
-					opacity: 1;
-				}
-				&:after {
-					opacity: .45;
-				}
-			}
-		}
-	}
-
-	.img-wrapper {
-		position: relative;
-
-		&:before {
-			content: "View Project";
-			color: $color-white;
-			@extend .h2;
-			font-weight: 800;
-			position: absolute;
-			top: 50%;
-			width:100%;
-			text-align: center;
-			margin: auto;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		-webkit-transition-delay: .25s;
-    		transition-delay: .25s;
-    		z-index: 2;
-		}
-
-		&:after {
-			background: #000;
-			content: "";
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		z-index: 1;
-		}
-	}
-
-	img {
-		width: 100%;
-	}
-
-	span.h2:first-of-type {
-		margin: 1rem 0 .5rem;
-	}
-}
 
 .footer {
 	background: $color-alabaster;

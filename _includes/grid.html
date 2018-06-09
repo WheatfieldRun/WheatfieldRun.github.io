@@ -1,7 +1,13 @@
 
-<section class="projects">
+<section class="grid">
 	<div class="container no-pad">
-		<ul class="projects-list">
+		
+		{% if include.normalSize == false %}
+		<ul class="mini">
+		{% else %}
+		<ul>
+		{% endif %}
+
 			{% for item in include.items reversed %}
 				{% if item.draft!=true %}
 					
