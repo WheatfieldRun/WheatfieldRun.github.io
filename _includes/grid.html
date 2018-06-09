@@ -1,0 +1,28 @@
+<div class="projects">
+	<div class="container no-pad">
+		<ul class="projects-list">
+
+			{% for item in include.items reversed %}
+				{% if item.draft!=true %}
+					
+					{% if include.artist == item.artist 
+						|| item.genre contains include.genre | join: ','  
+						|| item.members contains include.member | join: ',' 
+						|| item.all == true %}
+					<li>
+						<a href="{{ item.url | prepend: site.baseurl }}">
+							<div class="img-wrapper">
+								<img src="{{ item.images[0].url | prepend: site.baseurl }}" alt="{{ item.images[0].alt }}" />
+							</div>
+							
+							<span class="h2">{{ item.genre }}</span>
+							<h3>{{ item.name }}</h3>
+						</a>
+					</li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+

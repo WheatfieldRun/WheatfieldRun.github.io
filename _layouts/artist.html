@@ -23,28 +23,6 @@
 					<br/>
 
 					{{ page.content }}
-
-					<span class="h2">Discography</span>
-
-					<div class="projects">
-						<div class="container no-pad">
-							<ul class="project-list-mini">
-								{% for item in site.releases reversed %}
-									{% if item.artist == page.name %}
-									<li>
-										<a href="{{ item.url | prepend: site.baseurl }}">
-											<div class="img-wrapper">
-												<img src="{{ item.images[0].url | prepend: site.baseurl }}" alt="{{ item.images[0].alt }}" />
-											</div>
-											<span class="h2">{{ item.genre }}</span>
-											<h3>{{ item.name }}</h3>
-										</a>
-									</li>
-									{% endif %}
-								{% endfor %}
-							</ul>
-						</div>
-					</div>
 					
 					<span class="h2">Members</span>
 					<p>{{ page.members }}</p>

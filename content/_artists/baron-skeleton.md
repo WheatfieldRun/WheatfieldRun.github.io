@@ -4,7 +4,7 @@ permalink: /artists/:title/
 
 name: Baron Skeleton
 members: Ben Dyck, Marlon Wiebe
-genre: Lo-Fi
+genre: Lo-Fi, Improvised
 bandcamp: https://baronskeleton.bandcamp.com
 slug: baron-skeleton
 images:
@@ -17,3 +17,10 @@ images:
 ## Bio
 
 Forged out of a bear skeleton or possibly a skeleton forged out of a bear, Baron Skeleton arose from the crypt to create only the most ooky of spooky winter cabin basement rock
+
+## Discography
+
+{% include grid.html 
+  items=site.releases
+  artist=page.name
+%}
