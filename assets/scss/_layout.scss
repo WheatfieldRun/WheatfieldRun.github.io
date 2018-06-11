@@ -58,89 +58,71 @@
 	}
 }
 
-.grid
-{
-	ul
-	{
-		@media (min-width: $breakpoint-small) 
-		{
-			margin-left: -1.5rem;
-			margin-right: -1.5rem;
+.grid {
+	ul {
+		@media (min-width: $breakpoint-small) {
+			//margin-left: -1.5rem;
+			//margin-right: -1.5rem;
 			@include clearfix;
 
-			li 
-			{
+			li {
 				float: left;
 				width: 50%;
 			}
 
-			a 
-			{
+			a {
 				padding: 0 1.5rem;
 			}
 		}
 
-		@media (min-width: $breakpoint-medium) 
-		{
-			li 
-			{
+		@media (min-width: $breakpoint-medium) {
+			li {
 				width: 33.33333%;
 			}
 		}
 
-		&.mini 
-		{
-			@media (min-width: $breakpoint-small) 
-			{
-				//margin-left: -1.5rem;
-				margin-right: 1em;
-				@include clearfix;
+		&.mini {
+			a {
+				padding-left: 0;
+				padding-right: 3rem;
+			}
 
-				li 
-				{
+			@media (min-width: $breakpoint-medium) {
+
+				li {
 					float: left;
 					width: 100%;
 				}
-
-				a 
-				{
-					padding: 1rem 0;
-				}
 			}
 
-			@media (min-width: $breakpoint-medium) 
-			{
-				li 
-				{
+			@media (min-width: $breakpoint-large) {
+				li {
 					width: 45%;
 				}
 			}
+
+			span.h2 {
+				padding-top: 1rem;
+			}
 		}
 
-		li 
-		{
+		li {
 			margin-bottom: 3rem;
 
-			&:last-child 
-			{
+			&:last-child {
 				margin-bottom: 0;
 			}
 		}
 
-		a 
-		{
+		a {
 			display: block;
 
-			&:hover 
-			{
-				.img-wrapper 
-				{
-					&:before 
-					{
+			&:hover {
+				.img-wrapper {
+					&:before {
 						opacity: 1;
 					}
-					&:after 
-					{
+					&:after {
 						opacity: .45;
 					}
 				}
@@ -236,6 +218,8 @@
 		{
 			margin: 1rem 0 .5rem;
 		}
+
+		
 	}
 }
 
