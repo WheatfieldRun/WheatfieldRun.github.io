@@ -58,131 +58,168 @@
 	}
 }
 
-.projects-list {
-	@media (min-width: $breakpoint-small) {
-		margin-left: -1.5rem;
-		margin-right: -1.5rem;
-		@include clearfix;
+.grid {
+	ul {
+		@media (min-width: $breakpoint-small) {
+			//margin-left: -1.5rem;
+			//margin-right: -1.5rem;
+			@include clearfix;
+
+			li {
+				float: left;
+				width: 50%;
+			}
+
+			a {
+				padding: 0 1.5rem;
+			}
+		}
+
+		@media (min-width: $breakpoint-medium) {
+			li {
+				width: 33.33333%;
+			}
+		}
+
+		&.mini {
+			a {
+				padding-left: 0;
+				padding-right: 3rem;
+			}
+
+			@media (min-width: $breakpoint-medium) {
+
+				li {
+					float: left;
+					width: 100%;
+				}
+			}
+
+			@media (min-width: $breakpoint-large) {
+				li {
+					width: 45%;
+				}
+			}
+
+			span.h2 {
+				padding-top: 1rem;
+			}
+		}
 
 		li {
-			float: left;
-			width: 50%;
+			margin-bottom: 3rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 
 		a {
-			padding: 0 1.5rem;
-		}
-	}
+			display: block;
 
-	@media (min-width: $breakpoint-medium) {
-		li {
-			width: 33.33333%;
-		}
-	}
-
-	li {
-		margin-bottom: 3rem;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
-	a {
-		display: block;
-
-		&:hover {
-			.img-wrapper {
-				&:before {
-					opacity: 1;
-				}
-				&:after {
-					opacity: .45;
+			&:hover {
+				.img-wrapper {
+					&:before {
+						opacity: 1;
+					}
+					&:after {
+						opacity: .45;
+					}
 				}
 			}
 		}
-	}
 
-	.img-wrapper {
-		position: relative;
+		.img-wrapper 
+		{
+			position: relative;
 
-		&:before {
-			content: "View Release";
-			color: $color-white;
-			@extend .h2;
-			font-weight: 800;
-			position: absolute;
-			top: 50%;
-			width:100%;
-			text-align: center;
-			margin: auto;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		-webkit-transition-delay: .25s;
-    		transition-delay: .25s;
-    		z-index: 2;
+			&:before 
+			{
+				content: "View Release";
+				color: $color-white;
+				@extend .h2;
+				font-weight: 800;
+				position: absolute;
+				top: 50%;
+				width:100%;
+				text-align: center;
+				margin: auto;
+				opacity: 0;
+				-webkit-transition: all .5s ease-in-out;
+	    		transition: all .5s ease-in-out;
+	    		-webkit-transition-delay: .25s;
+	    		transition-delay: .25s;
+	    		z-index: 2;
+			}
+
+			&:after 
+			{
+				background: #000;
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				opacity: 0;
+				-webkit-transition: all .5s ease-in-out;
+	    		transition: all .5s ease-in-out;
+	    		z-index: 1;
+			}
 		}
 
-		&:after {
-			background: #000;
-			content: "";
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		z-index: 1;
+		.img-wrapper-artist 
+		{
+			position: relative;
+
+			&:before 
+			{
+				content: "View Artist";
+				color: $color-white;
+				@extend .h2;
+				font-weight: 800;
+				position: absolute;
+				top: 50%;
+				width:100%;
+				text-align: center;
+				margin: auto;
+				opacity: 0;
+				-webkit-transition: all .5s ease-in-out;
+	    		transition: all .5s ease-in-out;
+	    		-webkit-transition-delay: .25s;
+	    		transition-delay: .25s;
+	    		z-index: 2;
+			}
+
+			&:after 
+			{
+				background: #000;
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				opacity: 0;
+				-webkit-transition: all .5s ease-in-out;
+	    		transition: all .5s ease-in-out;
+	    		z-index: 1;
+			}
 		}
-	}
 
-	.img-wrapper-artist {
-		position: relative;
-
-		&:before {
-			content: "View Artist";
-			color: $color-white;
-			@extend .h2;
-			font-weight: 800;
-			position: absolute;
-			top: 50%;
-			width:100%;
-			text-align: center;
-			margin: auto;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		-webkit-transition-delay: .25s;
-    		transition-delay: .25s;
-    		z-index: 2;
+		img 
+		{
+			width: 100%;
 		}
 
-		&:after {
-			background: #000;
-			content: "";
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		z-index: 1;
+		span 
+		{
+			margin: 1rem 0 .5rem;
 		}
-	}
 
-	img {
-		width: 100%;
-	}
-
-	span {
-		margin: 1rem 0 .5rem;
+		
 	}
 }
 
@@ -230,15 +267,6 @@
 		@media (min-width: $breakpoint-medium) {
 			float: left;
 			width: 55%;
-		}
-	}
-
-	.project-meta {
-		margin: 3rem 0 0;
-
-		@media (min-width: $breakpoint-medium) {
-			margin: 5rem 0 0;
-			max-width: 70%;
 		}
 	}
 
@@ -377,97 +405,7 @@
 	}
 }
 
-.project-list-mini {
-	@media (min-width: $breakpoint-small) {
-		//margin-left: -1.5rem;
-		//margin-right: -1.5rem;
-		@include clearfix;
 
-		li {
-			float: left;
-			width: 100%;
-		}
-
-		a {
-			padding: 1rem 0;
-		}
-	}
-
-	@media (min-width: $breakpoint-medium) {
-		li {
-			width: 45%;
-		}
-	}
-
-	li {
-		margin-bottom: 3rem;
-		margin-right: 1rem;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
-	a {
-		display: block;
-
-		&:hover {
-			.img-wrapper {
-				&:before {
-					opacity: 1;
-				}
-				&:after {
-					opacity: .45;
-				}
-			}
-		}
-	}
-
-	.img-wrapper {
-		position: relative;
-
-		&:before {
-			content: "View Project";
-			color: $color-white;
-			@extend .h2;
-			font-weight: 800;
-			position: absolute;
-			top: 50%;
-			width:100%;
-			text-align: center;
-			margin: auto;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		-webkit-transition-delay: .25s;
-    		transition-delay: .25s;
-    		z-index: 2;
-		}
-
-		&:after {
-			background: #000;
-			content: "";
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		z-index: 1;
-		}
-	}
-
-	img {
-		width: 100%;
-	}
-
-	span.h2:first-of-type {
-		margin: 1rem 0 .5rem;
-	}
-}
 
 .footer {
 	background: $color-alabaster;

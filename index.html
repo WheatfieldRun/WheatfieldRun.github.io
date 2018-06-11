@@ -18,26 +18,9 @@
 				<p>A netlabel created and maintained by a loose collective of <a class="show-link" href="/artists.html">musicians<a/> from the prairies.</p>
 			</div>
 		</section>
-		<section class="projects">
-			<div class="container">
-				<h2>All Releases</h2>
-				<ul class="projects-list">
-					{% for item in site.releases reversed %}
-						{% if item.draft!=true %}
-						<li>
-							<a href="{{ item.url | prepend: site.baseurl }}">
-								<div class="img-wrapper">
-									<img src="{{ item.images[0].url | prepend: site.baseurl }}" alt="{{ item.images[0].alt }}" />
-								</div>
-								<span class="h2">{{ item.genre }}</span>
-								<h3>{{ item.name }}</h3>
-							</a>
-						</li>
-						{% endif %}
-					{% endfor %}
-				</ul>
-			</div>
-		</section>
+
+		{% include grid.html items=site.releases filter=false %}
+		
 	</main>
 	{% include footer.html %}
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
