@@ -18,10 +18,12 @@ images:
 
 ## BIO
 
-<p>Here is where some info would go.</p>
+<p>Hero is Not Strong is the musical pseudonym of Marlon Wiebe, taken from a poor translation of a video game. Raised in small town Saskatchewan on NES games, ukuleles, and figuring out how to make weird QBASIC things on his 286.</p>
 
-<p>More if you like.</p>
+## Discography
 
-## Other Info
-
-<p>So much!</p>
+{% include grid.html 
+  items=site.releases
+  artist=page.name
+  normalSize=false
+%}
