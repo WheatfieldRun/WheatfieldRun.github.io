@@ -19,6 +19,12 @@
 .logo{
 	font-family: $font-logo;
 	font-size: 4rem + $font-logo-sizing;
+
+	img
+	{
+		width: 100%;
+		max-width: 400px;
+	}
 }
 
 .nav {
