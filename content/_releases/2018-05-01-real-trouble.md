@@ -13,7 +13,7 @@ artist: Hero Is Not Strong
 
 images:
   - image:
-    url: https://f4.bcbits.com/img/a1857850473_16.jpg
+    url: https://f4.bcbits.com/img/a2164976020_10.jpg
     alt: REAL TROUBLE album art
 
 ---
