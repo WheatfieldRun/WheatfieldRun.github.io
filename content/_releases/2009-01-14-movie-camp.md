@@ -15,7 +15,7 @@ images:
     url: https://f4.bcbits.com/img/a3473029734_10.jpg
     alt: Movie Camp album art
 
-description: Recorded on a hacked Nintendo DS with two electric organs in a chalet in the middle of a goddamned Manitoba winter.
+description: Recorded on a hacked Nintendo DS with two electric organs in a chalet in the middle of a goddamned Manitoba winter. 
 
 ---
 

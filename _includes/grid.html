@@ -1,7 +1,7 @@
 
 <section class="grid">
 	<div class="container no-pad">
-		
+
 		{% if include.normalSize == false %}
 		<ul class="mini">
 		{% else %}
@@ -10,17 +10,17 @@
 
 			{% for item in include.items reversed %}
 				{% if item.draft!=true %}
-					
-					{% if include.artist == item.artist 
-						or item.genre contains include.genre | join: ','  
-						or item.members contains include.member | join: ',' 
+
+					{% if include.artist == item.artist
+						or item.genre contains include.genre | join: ','
+						or item.members contains include.member | join: ','
 						or include.filter == false %}
 					<li>
-						<a href="{{ item.url | prepend: site.baseurl }}">
+						<a href="{{ item.url }}">
 							<div class="img-wrapper">
-								<img src="{{ item.images[0].url | prepend: site.baseurl }}" alt="{{ item.images[0].alt }}" />
+								<img src="{{ item.images[0].url }}" alt="{{ item.images[0].alt }}" />
 							</div>
-							
+
 							<span class="h2">{{ item.genre }}</span>
 							<h3>{{ item.name }}</h3>
 						</a>
@@ -31,4 +31,3 @@
 		</ul>
 	</div>
 </section>
-
