@@ -4,24 +4,8 @@
 <html lang="en">
 <head>
 	<title>{{ site.author }} / {{ page.name }}</title>
-	<meta name="author" content="{{ page.name }}">
-	<meta name="description" content="{{ page.description }}">
-	<meta name="keywords" content="{{ site.keywords }}">
 
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="{{ page.baseurl }}">
-	<meta property="og:title" content="{{ page.title }}">
-	<meta property="og:description" content="{{ page.description }}">
-	<meta property="og:image" content="{{ page.images[0].url }}">
-
-	<meta name="twitter:title" content="{{ page.title }}">
-	<meta name="twitter:description" content="{{ page.description }}">
-	<meta name="twitter:image" content="{{ page.images[0].url }}">
-
-<!--
-	<meta name="twitter:site" content="@USERNAME">
-	<meta name="twitter:creator" content="@USERNAME">
--->
+	{% include unfurlpage.html %}
 
 	{% include head.html %}
 </head>
