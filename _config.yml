@@ -1,10 +1,11 @@
 # User config
-author: "Wheatfield Run"
+title: "Wheatfield Run"
+author: "Marlon Wiebe"
 tagline: "A Netlabel from the Prairies"
 description: "A netlabel created and maintained by a loose collective of musicians from the prairies."
 keywords: "Wheatfield Run, music, netlabel"
 email: "hi@wheatfield.run"
-heroimage: assets/images/hero.png
+heroimage: /assets/images/hero.png
 # linkedin: "https://www.linkedin.com/"
 # twitter: "https://twitter.com/"
 # github: "https://github.com/"
