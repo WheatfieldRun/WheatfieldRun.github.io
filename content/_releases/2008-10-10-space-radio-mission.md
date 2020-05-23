@@ -17,6 +17,8 @@ images:
     url: https://f4.bcbits.com/img/a0697410350_10.jpg
     alt: Space Radio Mission album art
 
+description: This album has everything! It's got a ukulele. It's got the space bucket bass. It's got an 80's dance pop song about long underwear.
+
 ---
 
 ## Description
@@ -25,7 +27,7 @@ This album has everything! It's got a ukulele. It's got the space bucket bass. I
 
 Oh yeah. Francis Leonard and Wyll Maynard are on there too.
 
-{% include bandcamp-embed.html 
+{% include bandcamp-embed.html
   embed=page.embed
   name=page.name
   artist=page.artist.name

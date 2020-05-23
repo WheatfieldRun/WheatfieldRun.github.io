@@ -17,6 +17,8 @@ images:
     url: https://f4.bcbits.com/img/a2175741524_16.jpg
     alt: Fantastic Morning album art
 
+description: I hope it picks you up and puts you down in a different place when it ends, as I hope the full album does when I can get it up here. So this is an in-the-meantime hello. Hi.
+
 ---
 
 ## Description

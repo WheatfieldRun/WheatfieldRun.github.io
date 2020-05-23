@@ -15,6 +15,8 @@ images:
     url: https://f4.bcbits.com/img/a0312282596_16.jpg
     alt: Toque album art
 
+description: Originally recorded sometime between 2006-2008, it was the first album I ever made from start to finish. Energetic ukulele tunes contrasted with some young adult angst.
+
 ---
 
 ## Description
@@ -25,7 +27,7 @@ images:
 
 <p></p>
 
-{% include bandcamp-embed.html 
+{% include bandcamp-embed.html
   embed=page.embed
   name=page.name
   artist=page.artist.name

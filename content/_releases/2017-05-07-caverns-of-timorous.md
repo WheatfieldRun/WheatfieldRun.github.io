@@ -16,13 +16,15 @@ images:
     url: https://f4.bcbits.com/img/a3611967784_16.jpg
     alt: Caverns of Timorous album art
 
+description: A soundtrack for a non-existent RPG and the meta-quest to overcome personal creative struggles.
+
 ---
 
 ## Description
 
 <p>A soundtrack for a non-existent RPG and the meta-quest to overcome personal creative struggles.</p>
 
-{% include bandcamp-embed.html 
+{% include bandcamp-embed.html
   embed=page.embed
   name=page.name
   artist=page.artist.name
