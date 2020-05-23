@@ -17,6 +17,8 @@ images:
     url: https://f4.bcbits.com/img/a2677472207_16.jpg
     alt: Hero is Not Strong album art
 
+description: This is where you describe the release.
+
 ---
 
 ## Description
@@ -25,7 +27,7 @@ images:
 
 <p></p>
 
-{% include bandcamp-embed.html 
+{% include bandcamp-embed.html
   embed=page.embed
   name=page.name
   artist=page.artist.name

@@ -14,6 +14,7 @@ images:
     url: "https://f4.bcbits.com/img/0020086630_20.jpg"
     alt: "Curtis L. Wiebe Picture"
 
+description: Curtis L. Wiebe is a short-film maker, animator, musician and sculptor based in Winnipeg, Manitoba, Canada.
 ---
 
 ## BIO
@@ -24,7 +25,7 @@ images:
 
 ## Discography
 
-{% include grid.html 
+{% include grid.html
   items=site.releases
   artist=page.name
   normalSize=false

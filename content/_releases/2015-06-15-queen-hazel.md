@@ -17,6 +17,8 @@ images:
     url: https://f4.bcbits.com/img/a3052069204_10.jpg
     alt: Queen Hazel album art
 
+description: Queen Hazel and the If-Pigeons is a song novel (concept album) I conceived and created in the twilight of my 20's. A decade later, I rediscovered it and was inspired to continue work on the project.
+
 ---
 
 ## Description

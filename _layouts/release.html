@@ -5,6 +5,17 @@
 	<meta name="author" content="{{ site.author }}">
 	<meta name="description" content="{{ page.content | strip_html | strip_newlines }}">
 	<meta name="keywords" content="{{ page.meta.keywords }}">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ page.baseurl }}">
+	<meta property="og:title" content="{{ page.title }}">
+	<meta property="og:description" content="{{ page.description }}">
+	<meta property="og:image" content="{{ page.images[0].url }}">
+
+	<meta name="twitter:title" content="{{ page.title }}">
+	<meta name="twitter:description" content="{{ page.description }}">
+	<meta name="twitter:image" content="{{ page.images[0].url }}">
+
 	{% include head.html %}
 </head>
 <body>
@@ -18,7 +29,7 @@
 					<h1>
 						<a class="show-link" href="{{ page.link }}" target="_blank" title="{{ page.name }}" rel="nofollow">{{ page.name }}</a>
 					</h1>
-					
+
 					<span class="h2">Artist</span>
 					<p><a class="show-link" title="{{ page.artist }}" href="{{ site.baseurl }}/artists/{{ page.artist | replace: ' ', '-' | downcase }}">{{ page.artist }}</a></p>
 
@@ -26,10 +37,10 @@
 					<p>{{ page.genre }}</p>
 
 					{{ page.content }}
-						
+
 					<span class="h2">Release Date</span>
 					<p>{{ page.releaseDate }}</p>
-					
+
 				</article>
 				<aside>
 					<ul>
