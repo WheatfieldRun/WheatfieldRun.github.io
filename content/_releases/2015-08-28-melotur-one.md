@@ -17,8 +17,6 @@ images:
     url: https://f4.bcbits.com/img/a1423078069_16.jpg
     alt: Melotur One album art
 
-description: It's an album in one take and here is a listing of songs as they appear within it.
-
 ---
 
 ## Description

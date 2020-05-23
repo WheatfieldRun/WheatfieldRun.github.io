@@ -16,8 +16,6 @@ images:
     url: https://f4.bcbits.com/img/a3074439904_10.jpg
     alt: Random Adventures in Space album art
 
-description: The Secondhandpants tighten up their act in their latest effort, solidifying their musical style with their simple pop instrumentation, harmonies and witty lyrics.
-
 ---
 
 ## Description
@@ -28,7 +26,7 @@ This album hits you fast and hard, launching you into another universe with it's
 
 This album must be heard to be believed.
 
-{% include bandcamp-embed.html
+{% include bandcamp-embed.html 
   embed=page.embed
   name=page.name
   artist=page.artist.name

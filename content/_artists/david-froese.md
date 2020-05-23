@@ -15,8 +15,6 @@ images:
     url: "https://f4.bcbits.com/img/0015096363_10.jpg"
     alt: David Froese Picture
 
-description: David Froese is often writing and sometimes recording small moments caught in songs.
-
 ---
 
 ## Bio

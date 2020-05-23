@@ -15,15 +15,13 @@ images:
     url: https://f4.bcbits.com/img/a3473029734_10.jpg
     alt: Movie Camp album art
 
-description: Recorded on a hacked Nintendo DS with two electric organs in a chalet in the middle of a goddamned Manitoba winter.
-
 ---
 
 ## Description
 
 Recorded on a hacked Nintendo DS with two electric organs in a chalet in the middle of a goddamned Manitoba winter. It was the most productive thing that we did that weekend when we were supposed to film a part of The Devil Wears a Paper Hat.
 
-{% include bandcamp-embed.html
+{% include bandcamp-embed.html 
   embed=page.embed
   name=page.name
   artist=page.artist.name

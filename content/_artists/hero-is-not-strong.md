@@ -12,8 +12,6 @@ images:
     url: https://f4.bcbits.com/img/0013265207_20.jpg
     alt: Hero Is Not Strong Picture
 
-description: Hero is Not Strong was raised in small town Saskatchewan on NES games, ukuleles, and figuring out how to make weird QBASIC things on his 286.
-
 ---
 
 ## BIO
@@ -22,7 +20,7 @@ description: Hero is Not Strong was raised in small town Saskatchewan on NES gam
 
 ## Discography
 
-{% include grid.html
+{% include grid.html 
   items=site.releases
   artist=page.name
   normalSize=false

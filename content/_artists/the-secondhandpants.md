@@ -12,8 +12,6 @@ images:
     url: "https://f4.bcbits.com/img/0013553117_20.jpg"
     alt: "Secondhandpants Portrait"
 
-description: The Secondhandpants aim to spread their particular brand of science fiction infused folk music, or Science-Folktion.
-
 ---
 
 ## BIO
@@ -22,7 +20,7 @@ description: The Secondhandpants aim to spread their particular brand of science
 
 ## Discography
 
-{% include grid.html
+{% include grid.html 
   items=site.releases
   artist=page.name
 %}
