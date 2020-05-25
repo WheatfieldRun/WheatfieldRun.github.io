@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +22,7 @@
 					</h1>
 
 					<span class="h2">Artist</span>
-					<p><a class="show-link" title="{{ page.artist }}" href="{{ site.baseurl }}/artists/{{ page.artist | replace: ' ', '-' | downcase }}">{{ page.artist }}</a></p>
+					<p><a class="show-link" title="{{ page.artist }}" href="/artists/{{ page.artist | replace: ' ', '-' | downcase }}">{{ page.artist }}</a></p>
 
 					<span class="h2">Genre</span>
 					<p>{{ page.genre }}</p>
@@ -35,7 +37,7 @@
 					<ul>
 						{% for image in page.images %}
 						<li>
-							<img src="{{ image.url | prepend: site.baseurl }}" alt="{{ image.alt }}" />
+							<img src="{{ image.url }}" alt="{{ image.alt }}" />
 						</li>
 						{% endfor %}
 					</ul>

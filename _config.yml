@@ -13,6 +13,7 @@ heroimage: /assets/images/hero.png
 # Site config
 baseurl: "http://wheatfield.run"
 highlighter: rouge
+
 sass:
   sass_dir: assets/scss
   style: compressed
