@@ -11,7 +11,8 @@
 			}
 
 			a {
-				padding: 0 1.5rem;
+				padding-left: 0;
+				padding-right: 3rem;
 			}
 		}
 
@@ -37,7 +38,7 @@
 
 			@media (min-width: $breakpoint-large) {
 				li {
-					width: 45%;
+					width: 50%;
 				}
 			}
 
@@ -69,11 +70,11 @@
 			}
 		}
 
-		.img-wrapper 
+		.img-wrapper
 		{
 			position: relative;
 
-			&:before 
+			&:before
 			{
 				content: "View Release";
 				color: $color-white;
@@ -92,7 +93,7 @@
 	    		z-index: 2;
 			}
 
-			&:after 
+			&:after
 			{
 				background: #000;
 				content: "";
@@ -109,11 +110,11 @@
 			}
 		}
 
-		.img-wrapper-artist 
+		.img-wrapper-artist
 		{
 			position: relative;
 
-			&:before 
+			&:before
 			{
 				content: "View Artist";
 				color: $color-white;
@@ -132,7 +133,7 @@
 	    		z-index: 2;
 			}
 
-			&:after 
+			&:after
 			{
 				background: #000;
 				content: "";
@@ -149,16 +150,16 @@
 			}
 		}
 
-		img 
+		img
 		{
 			width: 100%;
 		}
 
-		span 
+		span
 		{
 			margin: 1rem 0 .5rem;
 		}
 
-		
+
 	}
 }

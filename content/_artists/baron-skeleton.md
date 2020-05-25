@@ -23,4 +23,5 @@ Forged out of a bear skeleton or possibly a skeleton forged out of a bear, Baron
 {% include grid.html
   items=site.releases
   artist=page.name
+  normalSize=false
 %}

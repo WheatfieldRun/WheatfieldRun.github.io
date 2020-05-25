@@ -25,4 +25,5 @@ description: The Secondhandpants aim to spread their particular brand of science
 {% include grid.html
   items=site.releases
   artist=page.name
+  normalSize=false
 %}
